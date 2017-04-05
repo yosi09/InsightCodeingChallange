@@ -1,13 +1,15 @@
 # InsightCodeingChallange
 
-The code analyzed internet traffic data and provide the following outputs:
+The code analyzes internet traffic data and provide the following outputs:
 
 feature 1 - hosts.txt, 
 feature 2 - resources.txt, 
 feature 3 - hours.txt, 
 and feature 4 - blocked.txt. 
 
-The code received the log data from a file log.txt. To conserve the computer memory only 100,000 lines are uploaded each time (changeable by changing CHUNKDATA) and repeat it for the whole file. Since feature 4 needs to give real-time results while the other can be analyzed when the system is idle, it is analyzed by line, and therefore takes the longest to calculate.
+The code received a log data file log.txt. To conserve memory only 100,000 lines are uploaded each time (changeable by changing CHUNKDATA) and repeat it for the whole file. 
+
+Since only feature 4 needs to give real-time results while the other can be analyzed when the system is idle, feature 4 is analyzed by line, and therefore takes the longest to calculate.
 
 I add a fifth feature (Needed to activate by removing comments) that similar to feature 3 but with no overlap between the windows: For example, feature 3 can give the following windows:
 19:00:00 - 20:00:00; 
@@ -18,7 +20,7 @@ While feature 5:
 19:00:00 - 20:00:00; 
 20:00:00 - 21:00:00; 
 
-The packages i used are:
+I used to following standard packages in Python:
 
 Python version 3.5.3 (v3.5.3:1880cb95a742, Jan 16 2017, 16:02:32) [MSC v.1900 64 bit (AMD64)]
 
