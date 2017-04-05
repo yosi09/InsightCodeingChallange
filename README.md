@@ -1,4 +1,4 @@
-# InsightCodeingChallange
+# InsightCodingChallange
 
 The code analyzes internet traffic data and provide the following outputs:
 
