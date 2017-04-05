@@ -7,7 +7,7 @@ feature 2 - resources.txt,
 feature 3 - hours.txt, 
 and feature 4 - blocked.txt. 
 
-The code received the log data from a file log.txt. To conserve the computer memory only 100,000 lines are uploaded each time (changeable by changing CHUNKDATA) and repeat it for the whole file. Features 1-3 are analyzed as a bulk while Feature 4 are anaylzed by line. The reason for that is since feature 4 needs to give a real-time results while the other can be treated when the system is idle. 
+The code received the log data from a file log.txt. To conserve the computer memory only 100,000 lines are uploaded each time (changeable by changing CHUNKDATA) and repeat it for the whole file. Since feature 4 needs to give real-time results while the other can be analyzed when the system is idle, it is analyzed by line, and therefore takes the longest to calculate.
 
 I add a fifth feature (Needed to activate by removing comments) that similar to feature 3 but with no overlap between the windows: For example, feature 3 can give the following windows:
 19:00:00 - 20:00:00; 
@@ -28,7 +28,7 @@ NumPy version 1.12.1rc1
 
 DateTime 4.0.1
 
-The running time on my PC for each feature for the log.txt file (in seconds):
+The running time on my PC for each feature for the large log.txt file (in seconds):
 
 Feature 1: computation time 187.17270636558533
 
