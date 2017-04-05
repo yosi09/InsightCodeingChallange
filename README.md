@@ -28,4 +28,11 @@ NumPy version 1.12.1rc1
 
 DateTime 4.0.1
 
-The running time on my PC for each feature:
+The running time on my PC for each feature for the log.txt file (in seconds):
+Feature 1: computation time 187.17270636558533
+Feature 2: computation time 25.460456132888794
+Feature 3: computation time 39.75727391242981
+Feature 4: computation time 3170.6553514003754
+
+
+The code passed all 4 tests
